@@ -1,7 +1,7 @@
 # Project State: resystausa.com Website Backup
 
 **Last updated:** 2026-04-07
-**Last activity:** 2026-04-07 - Completed quick task 260407-qhd: Comprehensive backup audit — 107 missing files identified, 5 CF7 forms broken, 0/~61 blog posts captured
+**Last activity:** 2026-04-07 - Completed quick task 260407-rhm: Scraped 55 blog posts from Wayback Machine (all deleted from live site) — blog backup complete
 
 ---
 
@@ -61,6 +61,11 @@ Phase 1: [ ] Phase 2: [ ] Phase 3: [ ] Phase 4: [ ]
 - Python scraper fallback must also target direct IP to avoid TLS JA3 fingerprint detection
 - Wayback Machine fallback is last resort (HTML-only limitation acceptable at that point)
 - Phase 3 is conditional — skip it entirely if Phase 2 validation passes
+- Blog posts are at ROOT URL level (resystausa.com/SLUG/), NOT at /blog/SLUG/
+- All blog posts deleted from live site by April 2026 — Wayback Machine is sole source
+- admin-ajax.php (WP Bakery AJAX) is blocked at IONOS server level for /wp-admin/ path
+- WP REST API public posts endpoint returns 0 (posts are private/deleted)
+- Blog enumeration: use Wayback CDX domain scan (url=resystausa.com/*) to find post slugs
 
 ### Active TODOs
 - [ ] Confirm 74.208.236.71 is the current live IONOS origin IP (validate in Phase 1 probe)
@@ -79,6 +84,8 @@ Phase 1: [ ] Phase 2: [ ] Phase 3: [ ] Phase 4: [ ]
 | 260407-jrr | Install and run SiteOne Crawler for full SEO analysis of resystausa.com | 2026-04-07 | — | Complete | [260407-jrr-install-and-run-siteone-crawler-for-full](./quick/260407-jrr-install-and-run-siteone-crawler-for-full/) |
 | 260407-q3u | Спарсить список дистрибьюторов и заменить карту SSF на статические карточки | 2026-04-07 | 11e4bec | Complete | [260407-q3u-resystausa-com-find-a-distributor-super-](./quick/260407-q3u-resystausa-com-find-a-distributor-super-/) |
 | 260407-qhd | Comprehensive backup audit — 107 missing files, CF7 forms, blog gaps | 2026-04-07 | e837674 | Complete | [260407-qhd-resystausa-com](./quick/260407-qhd-resystausa-com/) |
+| 260407-rhk | Download 107 missing PDF/DWG-ZIP/DOCX from wp-content/uploads | 2026-04-07 | 22da640 | Complete | [260407-rhk-107-missing-pdf-dwg-docx-wp-content-uplo](./quick/260407-rhk-107-missing-pdf-dwg-docx-wp-content-uplo/) |
+| 260407-rhm | Scrape all ~55 blog posts from resystausa.com | 2026-04-07 | d7dadf5 | Complete | [260407-rhm-resystausa-com](./quick/260407-rhm-resystausa-com/) |
 
 ### Known Risks
 - If 74.208.236.71 is no longer the current origin IP, the entire primary path fails and Phase 3 becomes mandatory
