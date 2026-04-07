@@ -71,29 +71,29 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PRB-01 | Phase 1 | Pending |
-| PRB-02 | Phase 1 | Pending |
-| PRB-03 | Phase 1 | Pending |
-| PRB-04 | Phase 1 | Pending |
-| SMP-01 | Phase 1 | Pending |
-| SMP-02 | Phase 1 | Pending |
-| SMP-03 | Phase 1 | Pending |
-| MIR-01 | Phase 2 | Pending |
-| MIR-02 | Phase 2 | Pending |
-| MIR-03 | Phase 2 | Pending |
-| MIR-04 | Phase 2 | Pending |
-| UPL-01 | Phase 2 | Pending |
-| UPL-02 | Phase 2 | Pending |
-| FAL-01 | Phase 3 | Pending |
-| FAL-02 | Phase 3 | Pending |
-| FAL-03 | Phase 3 | Pending |
-| FAL-04 | Phase 3 | Pending |
-| FAL-05 | Phase 3 | Pending |
-| URL-01 | Phase 4 | Pending |
-| URL-02 | Phase 4 | Pending |
-| URL-03 | Phase 4 | Pending |
-| OUT-01 | Phase 4 | Pending |
-| OUT-02 | Phase 4 | Pending |
+| PRB-01 | Phase 1: Availability Probe + Sitemap Extraction | Pending |
+| PRB-02 | Phase 1: Availability Probe + Sitemap Extraction | Pending |
+| PRB-03 | Phase 1: Availability Probe + Sitemap Extraction | Pending |
+| PRB-04 | Phase 1: Availability Probe + Sitemap Extraction | Pending |
+| SMP-01 | Phase 1: Availability Probe + Sitemap Extraction | Pending |
+| SMP-02 | Phase 1: Availability Probe + Sitemap Extraction | Pending |
+| SMP-03 | Phase 1: Availability Probe + Sitemap Extraction | Pending |
+| MIR-01 | Phase 2: wget Mirror + Uploads Sweep | Pending |
+| MIR-02 | Phase 2: wget Mirror + Uploads Sweep | Pending |
+| MIR-03 | Phase 2: wget Mirror + Uploads Sweep | Pending |
+| MIR-04 | Phase 2: wget Mirror + Uploads Sweep | Pending |
+| UPL-01 | Phase 2: wget Mirror + Uploads Sweep | Pending |
+| UPL-02 | Phase 2: wget Mirror + Uploads Sweep | Pending |
+| FAL-01 | Phase 3: Fallback Strategies | Pending |
+| FAL-02 | Phase 3: Fallback Strategies | Pending |
+| FAL-03 | Phase 3: Fallback Strategies | Pending |
+| FAL-04 | Phase 3: Fallback Strategies | Pending |
+| FAL-05 | Phase 3: Fallback Strategies | Pending |
+| URL-01 | Phase 4: URL Consolidation + Output Structure | Pending |
+| URL-02 | Phase 4: URL Consolidation + Output Structure | Pending |
+| URL-03 | Phase 4: URL Consolidation + Output Structure | Pending |
+| OUT-01 | Phase 4: URL Consolidation + Output Structure | Pending |
+| OUT-02 | Phase 4: URL Consolidation + Output Structure | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
@@ -102,4 +102,4 @@
 
 ---
 *Requirements defined: 2026-04-07*
-*Last updated: 2026-04-07 after initial definition*
+*Last updated: 2026-04-07 after roadmap creation*
