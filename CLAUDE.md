@@ -7,6 +7,8 @@ A complete local archival copy of resystausa.com — a WordPress site the client
 
 **Core Value:** Preserve every accessible page and asset from resystausa.com before access is permanently lost.
 
+**Known-fixed (skip):** reCAPTCHA removed from all pages. Super Store Finder replaced with static distributor cards. CF7 forms and Flodesk newsletter hidden via CSS injection (`hide-forms.py`).
+
 ### Constraints
 
 - **Rate limiting**: Wait 1-2s between requests — do not hammer the server
@@ -106,7 +108,28 @@ A complete local archival copy of resystausa.com — a WordPress site the client
 <!-- GSD:conventions-start source:CONVENTIONS.md -->
 ## Conventions
 
-Conventions not yet established. Will populate as patterns emerge during development.
+### CSS Form Hiding Pattern
+
+**Pattern:** Inject a `<style>` block before `</head>` to visually suppress non-functional WordPress elements in the static backup.
+
+**Injected block (identified by comment `<!-- gsd:hide-forms -->`):**
+```html
+<!-- gsd:hide-forms -->
+<style>
+.wpcf7 { display: none !important; }
+.resnewsletter { display: none !important; }
+</style>
+```
+
+**Script:** `resysta-backup/hide-forms.py` — idempotent, safe to re-run.
+**Scope:** Applied to 607 HTML files in `resysta-backup/site/`.
+**Hidden elements:**
+- `.wpcf7` — all Contact Form 7 form containers (5 form IDs: 19875, 22816, 1004, 1005, 30013)
+- `.resnewsletter` — Flodesk newsletter widget on `index.html`
+
+**To restore (show forms again):** Remove the `<!-- gsd:hide-forms -->` comment and the `<style>` block that follows it from each affected HTML file. The script does not provide an undo — use git to revert, or write a reverse script targeting the `<!-- gsd:hide-forms -->` marker.
+
+**Why hidden instead of removed:** CSS injection is fast and reversible. Full DOM removal would require parsing each file and risks breaking surrounding layout. When a static form replacement (Formspree, Netlify Forms) is implemented, remove the CSS block and wire the replacement form in the same pass.
 <!-- GSD:conventions-end -->
 
 <!-- GSD:architecture-start source:ARCHITECTURE.md -->
