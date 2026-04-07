@@ -1,4 +1,18 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/animate.css/animate.min.css@ver=:ver.css",
+      "destination": "/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/animate.css/animate.min.css"
+    },
+    {
+      "source": "/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/imagesloaded/imagesloaded.pkgd.min.js@ver=:ver",
+      "destination": "/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/imagesloaded/imagesloaded.pkgd.min.js"
+    },
+    {
+      "source": "/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/masonry-layout/dist/masonry.pkgd.min.js@ver=:ver",
+      "destination": "/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/masonry-layout/dist/masonry.pkgd.min.js"
+    }
+  ]
 }
