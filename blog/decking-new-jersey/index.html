@@ -172,7 +172,7 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 <script id="vc_woocommerce-add-to-cart-js-js" src="https://web.archive.org/web/20250810012120js_/https://resystausa.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=8.2" type="text/javascript"></script>
 <!-- Google tag (gtag.js) snippet added by Site Kit -->
 <!-- Google Analytics snippet added by Site Kit -->
-<script async="" id="google_gtagjs-js" src="https://web.archive.org/web/20250810012120js_/https://www.googletagmanager.com/gtag/js?id=G-5NGE7EWDYH" type="text/javascript"></script>
+
 <script id="google_gtagjs-js-after" type="text/javascript">
 /* <![CDATA[ */
 window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
@@ -196,6 +196,18 @@ gtag("config", "G-5NGE7EWDYH");
 .wpcf7 { display: none !important; }
 /* Hide Flodesk newsletter widget */
 .resnewsletter { display: none !important; }
+</style>
+<!-- gsd:cleanup-site -->
+<style>
+/* Hide WooCommerce wishlist buttons */
+.yith-wcwl-add-button { display: none !important; }
+.yith-wcwl-add-to-wishlist { display: none !important; }
+/* Hide WooCommerce cart buttons */
+.ajax_add_to_cart { display: none !important; }
+.single_add_to_cart_button { display: none !important; }
+/* Hide cost calculator widget */
+#costCalculator { display: none !important; }
+.ql-cost-calculator { display: none !important; }
 </style>
 </head><body><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/decking-new-jersey/</div>
 <script type="text/javascript">//<![CDATA[
@@ -259,31 +271,15 @@ __wm.bt(775,27,25,2,"web","https://resystausa.com/decking-new-jersey/","20250810
 </div>
 </div>
 </div><meta content="Site Kit by Google 1.158.0" name="generator"/><!-- HFCM by 99 Robots - Snippet # 1: GTM -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://web.archive.org/https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TZK9RKBG');</script>
-<!-- End Google Tag Manager -->
+
 <!-- /end HFCM by 99 Robots -->
 <!-- HFCM by 99 Robots - Snippet # 2: gAds -->
 <!-- for form submit -->
 <!-- Google tag (gtag.js) event -->
-<script>
-  gtag('event', 'conversion_event_submit_lead_form_2', {
-    // <event_parameters>
-  });
-</script>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://web.archive.org/web/20250810012120js_/https://www.googletagmanager.com/gtag/js?id=AW-16712501160"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-16712501160');
-</script>
+<!-- Google tag (gtag.js) -->
+
+
 <!-- /end HFCM by 99 Robots -->
 <!-- HFCM by 99 Robots - Snippet # 4: zoom image -->
 <script>
@@ -722,22 +718,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })(window, document, 'script', 'https://web.archive.org/https://assets.flodesk.com', '/universal', 'fd');
 </script>
 <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-<!-- Meta Pixel Code -->
-<script type="text/javascript">
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://web.archive.org/https://connect.facebook.net/en_US/fbevents.js?v=next');
-</script>
-<!-- End Meta Pixel Code -->
-<script type="text/javascript">var url = window.location.origin + '?ob=open-bridge';
-            fbq('set', 'openbridge', '529254435419742', url);
-fbq('init', '529254435419742', {}, {
-    "agent": "wordpress-6.6.2-4.1.4"
-})</script><script type="text/javascript">
-    fbq('track', 'PageView', []);
-  </script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." name="generator"/>
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." name="generator"/>
 <style data-type="vc_custom-css">.gf-page-title.gf-page-title-default {
     display: none;
 }
@@ -1180,11 +1162,7 @@ line-height: 1.3em;
 }		</style>
 <style class="options-output" title="dynamic-css" type="text/css">404{background-color:#095d32;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:center center;}body{font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;font-size:16px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading body,{opacity: 0;}.ie.wf-loading body,{visibility: hidden;}{font-family:Arial, Helvetica, sans-serif;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading ,{opacity: 0;}.ie.wf-loading ,{visibility: hidden;}{font-family:Arial, Helvetica, sans-serif;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading ,{opacity: 0;}.ie.wf-loading ,{visibility: hidden;}{font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;font-size:13px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading ,{opacity: 0;}.ie.wf-loading ,{visibility: hidden;}{font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading ,{opacity: 0;}.ie.wf-loading ,{visibility: hidden;}h1{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;font-size:48px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h1,{opacity: 0;}.ie.wf-loading h1,{visibility: hidden;}h2{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;font-size:36px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h2,{opacity: 0;}.ie.wf-loading h2,{visibility: hidden;}h3{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;font-size:24px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h3,{opacity: 0;}.ie.wf-loading h3,{visibility: hidden;}h4{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;font-size:18px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h4,{opacity: 0;}.ie.wf-loading h4,{visibility: hidden;}h5{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;font-size:14px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h5,{opacity: 0;}.ie.wf-loading h5,{visibility: hidden;}h6{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h6,{opacity: 0;}.ie.wf-loading h6,{visibility: hidden;}</style><style data-type="vc_shortcodes-default-css" type="text/css">.vc_do_custom_heading{margin-bottom:0.625rem;margin-top:0;}.vc_do_custom_heading{margin-bottom:0.625rem;margin-top:0;}.vc_do_toggle{margin-bottom:22px;}.vc_do_toggle{margin-bottom:22px;}</style><style data-type="vc_shortcodes-custom-css" type="text/css">.vc_custom_1728357238434{padding-top: 100px !important;padding-right: 100px !important;padding-bottom: 100px !important;padding-left: 100px !important;background-color: #FFFFFF !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1719898388415{padding-top: 100px !important;padding-bottom: 100px !important;}.vc_custom_1719901683760{padding-top: 100px !important;padding-bottom: 100px !important;background-image: url(https://web.archive.org/web/20250810012120im_/https://resystausa.com/wp-content/uploads/2022/11/Head-Slider-Fassade-HiGru.jpg?id=29422) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1719906385794{padding-top: 50px !important;padding-bottom: 50px !important;background-color: #f7f7f7 !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1719903628884{padding-top: 100px !important;padding-bottom: 100px !important;background: #ffffff url(https://web.archive.org/web/20250810012120im_/https://resystausa.com/wp-content/uploads/2022/11/Head-Slider-Fassade-HiGru.jpg?id=29422) !important;}.vc_custom_1719903742593{padding-top: 50px !important;padding-bottom: 20px !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1744766671417{padding-top: 50px !important;padding-bottom: 50px !important;background-color: #F7F7F7 !important;}.vc_custom_1728352623006{background-color: #FFFFFF00 !important;}.vc_custom_1728360104466{background-color: #FFFFFF !important;border-radius: 10px !important;}.vc_custom_1742822816802{padding-bottom: 20px !important;}.vc_custom_1728354132409{padding-top: 30px !important;}.vc_custom_1728351261204{margin-top: 50px !important;}.vc_custom_1728354850328{margin-top: 50px !important;}.vc_custom_1742822886939{padding-top: 0px !important;padding-bottom: 20px !important;}.vc_custom_1728356311043{padding-bottom: 50px !important;}.vc_custom_1728356274514{padding-top: 50px !important;}.vc_custom_1719903796644{padding-top: 20px !important;padding-bottom: 20px !important;}.vc_custom_1719902534587{border-top-width: 1px !important;border-right-width: 1px !important;border-bottom-width: 1px !important;border-left-width: 1px !important;padding-top: 20px !important;padding-right: 20px !important;padding-bottom: 20px !important;padding-left: 20px !important;border-left-style: solid !important;border-right-style: solid !important;border-top-style: solid !important;border-bottom-style: solid !important;border-radius: 5px !important;border-color: #d8d8d8 !important;}.vc_custom_1719902599648{border-top-width: 1px !important;border-right-width: 1px !important;border-bottom-width: 1px !important;border-left-width: 1px !important;padding-top: 20px !important;padding-right: 20px !important;padding-bottom: 20px !important;padding-left: 20px !important;border-left-style: solid !important;border-right-style: solid !important;border-top-style: solid !important;border-bottom-style: solid !important;border-radius: 5px !important;border-color: #d8d8d8 !important;}.vc_custom_1744691349395{padding-top: 50px !important;}.vc_custom_1744691198334{background-color: #79AB2B !important;}.vc_custom_1744691375486{background-color: #79AB2B !important;}.vc_custom_1744691233261{background-color: #79AB2B !important;}.vc_custom_1744691246484{background-color: #79AB2B !important;}.vc_custom_1744691265269{background-color: #79AB2B !important;}.vc_custom_1744691281188{background-color: #79AB2B !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><meta content="WP Rocket 3.19.2.1" data-wpr-features="wpr_image_dimensions wpr_preload_links wpr_desktop" name="generator"/>
 <!-- Close Head -->
-<!-- Meta Pixel Code -->
-<noscript>
-<img alt="fbpx" height="1" src="https://web.archive.org/web/20250810012120im_/https://www.facebook.com/tr?id=529254435419742&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
+
 <!-- Open Wrapper -->
 <div data-rocket-location-hash="99bb46786fd5bd31bcd7bdc067ad247a" id="wrapper">
 <header class="main-header header-1" data-rocket-location-hash="9948fbf3b705ce4b013d57d5b0d98b90">
