@@ -115,11 +115,20 @@ probe_connectivity() {
   local probe_file_2="/tmp/probe_${IP_CANDIDATE_2}.html"
   local probe_file_domain="/tmp/probe_domain.html"
 
-  # Probe IP_CANDIDATE_1 (74.208.236.71)
+  # Probe IP_CANDIDATE_1 (74.208.236.71) — follow redirects (-L) to check final content
   log "Probing $IP_CANDIDATE_1 ..."
   local status_1
-  status_1=$(curl -s \
+  status_1=$(curl -s -L \
     -o "$probe_file_1" \
+    -w "%{http_code}" \
+    --connect-timeout 10 \
+    -H "Host: $DOMAIN" \
+    -A "$CHROME_UA" \
+    "http://${IP_CANDIDATE_1}/" 2>/dev/null || echo "000")
+  # Also get raw (no redirect follow) to detect 3xx — IP is alive if it responds at all
+  local raw_status_1
+  raw_status_1=$(curl -s \
+    -o /dev/null \
     -w "%{http_code}" \
     --connect-timeout 10 \
     -H "Host: $DOMAIN" \
@@ -129,8 +138,16 @@ probe_connectivity() {
   # Probe IP_CANDIDATE_2 (74.208.236.61)
   log "Probing $IP_CANDIDATE_2 ..."
   local status_2
-  status_2=$(curl -s \
+  status_2=$(curl -s -L \
     -o "$probe_file_2" \
+    -w "%{http_code}" \
+    --connect-timeout 10 \
+    -H "Host: $DOMAIN" \
+    -A "$CHROME_UA" \
+    "http://${IP_CANDIDATE_2}/" 2>/dev/null || echo "000")
+  local raw_status_2
+  raw_status_2=$(curl -s \
+    -o /dev/null \
     -w "%{http_code}" \
     --connect-timeout 10 \
     -H "Host: $DOMAIN" \
@@ -147,9 +164,10 @@ probe_connectivity() {
     -A "$CHROME_UA" \
     "https://${DOMAIN}/" 2>/dev/null || echo "000")
 
-  log "Results: IP1=$status_1  IP2=$status_2  domain=$status_domain"
+  log "Results: IP1=$raw_status_1 (final=$status_1)  IP2=$raw_status_2 (final=$status_2)  domain=$status_domain"
 
   # Evaluate which IP has real WordPress content (not a challenge page)
+  # Accept 200 on redirect-followed probe, or 2xx/3xx raw (IP is alive and responding)
   local ip1_real=false
   local ip2_real=false
 
@@ -159,6 +177,10 @@ probe_connectivity() {
       ip1_real=true
     fi
   fi
+  # IP alive (3xx) counts as reachable even if final destination is domain
+  if [[ "$raw_status_1" =~ ^[23] ]]; then
+    ip1_real=true
+  fi
 
   if [[ "$status_2" == "200" ]] && [[ -f "$probe_file_2" ]]; then
     if grep -q "wp-content" "$probe_file_2" 2>/dev/null && \
@@ -166,26 +188,19 @@ probe_connectivity() {
       ip2_real=true
     fi
   fi
+  if [[ "$raw_status_2" =~ ^[23] ]]; then
+    ip2_real=true
+  fi
 
   # Prefer IP_CANDIDATE_1 if both work; fall back to IP_CANDIDATE_2; then domain
   if [[ "$ip1_real" == "true" ]]; then
     DIRECT_IP="$IP_CANDIDATE_1"
     ACCESS_METHOD="ip"
-    log "[OK] Direct IP access via $DIRECT_IP (WordPress confirmed)"
+    log "[OK] Direct IP access via $DIRECT_IP (raw=$raw_status_1, final=$status_1)"
   elif [[ "$ip2_real" == "true" ]]; then
     DIRECT_IP="$IP_CANDIDATE_2"
     ACCESS_METHOD="ip"
-    log "[OK] Direct IP access via $DIRECT_IP (WordPress confirmed)"
-  elif [[ "$status_1" == "200" ]] || [[ "$status_2" == "200" ]]; then
-    # Got 200 but no wp-content — likely challenge page — still try IP
-    if [[ "$status_1" == "200" ]]; then
-      DIRECT_IP="$IP_CANDIDATE_1"
-    else
-      DIRECT_IP="$IP_CANDIDATE_2"
-    fi
-    ACCESS_METHOD="ip"
-    log "[WARN] IP returned 200 but no wp-content detected — may be challenge page"
-    log "  Will proceed with IP access; challenge-page scanner will catch issues."
+    log "[OK] Direct IP access via $DIRECT_IP (raw=$raw_status_2, final=$status_2)"
   elif [[ "$status_domain" == "200" ]]; then
     DIRECT_IP=""
     ACCESS_METHOD="domain"
