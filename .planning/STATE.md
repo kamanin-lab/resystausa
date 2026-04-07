@@ -1,7 +1,7 @@
 # Project State: resystausa.com Website Backup
 
 **Last updated:** 2026-04-07
-**Last activity:** 2026-04-07 - Completed quick task 260407-rhm: Scraped 55 blog posts from Wayback Machine (all deleted from live site) — blog backup complete
+**Last activity:** 2026-04-07 - Completed quick task 260407-uol: Injected CSS to hide CF7 forms and Flodesk newsletter across 607 static HTML pages
 
 ---
 
@@ -87,6 +87,7 @@ Phase 1: [ ] Phase 2: [ ] Phase 3: [ ] Phase 4: [ ]
 | 260407-rhk | Download 107 missing PDF/DWG-ZIP/DOCX from wp-content/uploads | 2026-04-07 | 22da640 | Complete | [260407-rhk-107-missing-pdf-dwg-docx-wp-content-uplo](./quick/260407-rhk-107-missing-pdf-dwg-docx-wp-content-uplo/) |
 | 260407-rhm | Спарсить 55 постов блога (с Wayback Machine — с живого сайта удалены) | 2026-04-07 | d7dadf5 | Complete | [260407-rhm-resystausa-com](./quick/260407-rhm-resystausa-com/) |
 | 260407-rhm | Scrape all ~55 blog posts from resystausa.com | 2026-04-07 | d7dadf5 | Complete | [260407-rhm-resystausa-com](./quick/260407-rhm-resystausa-com/) |
+| 260407-uol | Hide all CF7 contact forms and Flodesk newsletter across 607 static pages | 2026-04-07 | 116406b | Complete | [260407-uol-hide-all-contact-forms-and-newsletter-su](./quick/260407-uol-hide-all-contact-forms-and-newsletter-su/) |
 
 ### Known Risks
 - If 74.208.236.71 is no longer the current origin IP, the entire primary path fails and Phase 3 becomes mandatory
