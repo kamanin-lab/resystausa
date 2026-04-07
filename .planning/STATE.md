@@ -85,6 +85,7 @@ Phase 1: [ ] Phase 2: [ ] Phase 3: [ ] Phase 4: [ ]
 | 260407-q3u | Спарсить список дистрибьюторов и заменить карту SSF на статические карточки | 2026-04-07 | 11e4bec | Complete | [260407-q3u-resystausa-com-find-a-distributor-super-](./quick/260407-q3u-resystausa-com-find-a-distributor-super-/) |
 | 260407-qhd | Comprehensive backup audit — 107 missing files, CF7 forms, blog gaps | 2026-04-07 | e837674 | Complete | [260407-qhd-resystausa-com](./quick/260407-qhd-resystausa-com/) |
 | 260407-rhk | Download 107 missing PDF/DWG-ZIP/DOCX from wp-content/uploads | 2026-04-07 | 22da640 | Complete | [260407-rhk-107-missing-pdf-dwg-docx-wp-content-uplo](./quick/260407-rhk-107-missing-pdf-dwg-docx-wp-content-uplo/) |
+| 260407-rhm | Спарсить 55 постов блога (с Wayback Machine — с живого сайта удалены) | 2026-04-07 | d7dadf5 | Complete | [260407-rhm-resystausa-com](./quick/260407-rhm-resystausa-com/) |
 | 260407-rhm | Scrape all ~55 blog posts from resystausa.com | 2026-04-07 | d7dadf5 | Complete | [260407-rhm-resystausa-com](./quick/260407-rhm-resystausa-com/) |
 
 ### Known Risks

@@ -1,0 +1,20 @@
+============================================================
+download-report.txt — resystausa.com 107-file download
+Generated: 2026-04-07
+============================================================
+
+COUNTS
+  Total URLs in HTML:      107
+  Valid files (passed):    107
+    PDFs:                  50
+    ZIPs:                  54
+    DOCXs:                 3
+  Invalid/missing files:   0
+  Cloudflare challenges:   0
+
+INVALID/FAILED FILES: None
+
+CLOUDFLARE CHALLENGE PAGES: None detected
+
+VALIDATION RESULT
+  STATUS: PASS — All 107 files present and valid
