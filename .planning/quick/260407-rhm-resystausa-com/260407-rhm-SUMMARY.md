@@ -19,7 +19,8 @@ metrics:
   completed: 2026-04-07
   tasks_completed: 3/3
   posts_downloaded: 55
-  images_downloaded: 724
+  images_downloaded: 632
+  images_committed: 193
   failures: 0
 ---
 
@@ -117,12 +118,14 @@ None. All 55 posts contain actual HTML content from Wayback Machine snapshots.
 | Repo | Hash | Description |
 |------|------|-------------|
 | resysta-backup/site | d7dadf5 | feat: scrape 55 blog posts from resystausa.com via Wayback Machine |
+| resysta-backup/site | d0b67fb | feat(quick-260407-rhm): add blog post inline images from resystausa.com |
 | resystausa (main) | f9687d0 | feat: add blog post scraper script for resystausa.com |
 
 ## Self-Check: PASSED
 
 - 55 blog post `index.html` files exist in `resysta-backup/site/blog/*/`
-- Commits d7dadf5 and f9687d0 exist in respective repos
+- Commits d7dadf5, d0b67fb, and f9687d0 exist in respective repos
 - `scripts/scrape-blog-posts.py` created and committed
 - No CF challenge pages in any downloaded post
 - Script is idempotent (skips existing files on re-run)
+- 193 inline images committed separately in d0b67fb
