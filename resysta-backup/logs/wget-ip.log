@@ -1,0 +1,11 @@
+--2026-04-07 11:59:23--  http://74.208.236.71/
+Connecting to 74.208.236.71:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://resystausa.com/ [following]
+--2026-04-07 11:59:25--  https://resystausa.com/
+Resolving resystausa.com (resystausa.com)... 104.21.93.100, 172.67.208.167
+Connecting to resystausa.com (resystausa.com)|104.21.93.100|:443... connected.
+HTTP request sent, awaiting response... 304 Not Modified
+File 'resysta-backup/site/index.html' not modified on server. Omitting download.
+
+Converted links in 0 files in 0 seconds.

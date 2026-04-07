@@ -1,0 +1,24 @@
+[11:59:03] === Checking tools ===
+[11:59:03] [OK] curl found: curl 8.12.1 (x86_64-w64-mingw32) libcurl/8.12.1 Schannel zlib/1.3.1 brotli/1.1.0 zstd/1.5.7 libidn2/2.3.7 libpsl/0.21.5 libssh2/1.11.1
+[11:59:03] [OK] python found: Python 3.14.0
+[11:59:03] [OK] wget found: GNU Wget 1.21.4 built on mingw32.
+[11:59:03] === Checking Windows LongPathsEnabled ===
+[11:59:04] [OK] LongPathsEnabled = 1 — paths longer than 260 chars are supported
+[11:59:04] === Probing connectivity ===
+[11:59:05] Probing 74.208.236.71 ...
+[11:59:08] Probing 74.208.236.61 ...
+[11:59:11] Probing https://resystausa.com ...
+[11:59:11] Results: IP1=301 (final=200)  IP2=301 (final=200)  domain=200
+[11:59:15] [OK] Direct IP access via 74.208.236.71 (raw=301, final=200)
+[11:59:15] === Downloading sitemaps ===
+[11:59:17] [SKIP] sitemap.xml returned HTTP 404
+[11:59:20] [SKIP] sitemap_index.xml returned HTTP 404
+[11:59:23] [SKIP] wp-sitemap.xml returned HTTP 301
+[11:59:23] [INFO] url-list-raw.txt now has 0 entries after sitemaps
+[11:59:23] === Running wget mirror (IP + domain, parallel) ===
+[11:59:23] [INFO] Starting wget IP pass (http://74.208.236.71/) ...
+[11:59:23] [INFO] wget IP pass running (PID 1694)
+[11:59:23] [INFO] Starting wget domain pass (https://resystausa.com/) ...
+[11:59:23] [INFO] wget domain pass running (PID 1697)
+[11:59:23] [INFO] Waiting for both wget passes to complete...
+Both --no-clobber and --convert-links were specified, only --convert-links will be used.
