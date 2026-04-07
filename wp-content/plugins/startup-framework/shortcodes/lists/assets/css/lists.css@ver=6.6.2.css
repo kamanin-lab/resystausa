@@ -1,0 +1,188 @@
+ul.g5plus-lists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.g5plus-lists span {
+  float: left;
+  font-size: 15px;
+}
+ul.g5plus-lists p {
+  padding-left: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+ul.g5plus-lists li + li {
+  margin-top: 9px;
+}
+ul.g5plus-lists.g5plus-lists-round span {
+  background: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  position: relative;
+  line-height: 24px;
+}
+ul.g5plus-lists.g5plus-lists-round span i {
+  padding-left: 2px;
+}
+ul.g5plus-lists.g5plus-lists-round p {
+  padding-left: 36px;
+}
+ul.g5plus-lists.g5plus-lists-round li + li {
+  margin-top: 15px;
+}
+ul.g5plus-lists.g5plus-lists-dot li:before,
+ul.g5plus-lists.g5plus-lists-square li:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  top: 11px;
+  position: relative;
+  float: left;
+}
+ul.g5plus-lists.g5plus-lists-dot p,
+ul.g5plus-lists.g5plus-lists-square p {
+  padding-left: 18px;
+}
+ul.g5plus-lists.g5plus-lists-dot li:before {
+  border-radius: 50%;
+}
+ul.g5plus-list-size-lg span {
+  font-size: 17px;
+}
+ul.g5plus-list-size-lg p {
+  padding-left: 25px;
+  font-size: 16px;
+}
+ul.g5plus-list-size-lg li + li {
+  margin-top: 11px;
+}
+ul.g5plus-list-size-lg.g5plus-lists-round span {
+  width: 35px;
+  height: 35px;
+  line-height: 33px;
+}
+ul.g5plus-list-size-lg.g5plus-lists-round p {
+  padding-left: 50px;
+}
+ul.g5plus-list-size-lg.g5plus-lists-round li + li {
+  margin-top: 19px;
+}
+ul.g5plus-list-size-lg.g5plus-lists-dot li:before,
+ul.g5plus-list-size-lg.g5plus-lists-square li:before {
+  width: 6px;
+  height: 6px;
+}
+ul.g5plus-list-size-lg.g5plus-lists-dot p,
+ul.g5plus-list-size-lg.g5plus-lists-square p {
+  padding-left: 20px;
+}
+.g5plus-lists-color-blue.g5plus-lists-dot li:before,
+.g5plus-lists-color-blue.g5plus-lists-square li:before {
+  background-color: #5472D2;
+}
+.g5plus-lists-color-blue span {
+  color: #5472D2;
+}
+.g5plus-lists-color-turquoise.g5plus-lists-dot li:before,
+.g5plus-lists-color-turquoise.g5plus-lists-square li:before {
+  background-color: #00C1CF;
+}
+.g5plus-lists-color-turquoise span {
+  color: #00C1CF;
+}
+.g5plus-lists-color-pink.g5plus-lists-dot li:before,
+.g5plus-lists-color-pink.g5plus-lists-square li:before {
+  background-color: #FE6C61;
+}
+.g5plus-lists-color-pink span {
+  color: #FE6C61;
+}
+.g5plus-lists-color-violet:before {
+  background-color: #8D6DC4;
+}
+.g5plus-lists-color-violet span {
+  color: #8D6DC4;
+}
+.g5plus-lists-color-peacoc:before {
+  background-color: #4CADC9;
+}
+.g5plus-lists-color-peacoc span {
+  color: #4CADC9;
+}
+.g5plus-lists-color-chino:before {
+  background-color: #CEC2AB;
+}
+.g5plus-lists-color-chino span {
+  color: #CEC2AB;
+}
+.g5plus-lists-color-mulled_wine:before {
+  background-color: #50485B;
+}
+.g5plus-lists-color-mulled_wine span {
+  color: #50485B;
+}
+.g5plus-lists-color-vista_blue:before {
+  background-color: #75D69C;
+}
+.g5plus-lists-color-vista_blue span {
+  color: #75D69C;
+}
+.g5plus-lists-color-black:before {
+  background-color: #2A2A2A;
+}
+.g5plus-lists-color-black span {
+  color: #2A2A2A;
+}
+.g5plus-lists-color-orange:before {
+  background-color: #F7BE68;
+}
+.g5plus-lists-color-orange span {
+  color: #F7BE68;
+}
+.g5plus-lists-color-sky:before {
+  background-color: #5AA1E3;
+}
+.g5plus-lists-color-sky span {
+  color: #5AA1E3;
+}
+.g5plus-lists-color-green:before {
+  background-color: #6DAB3C;
+}
+.g5plus-lists-color-green span {
+  color: #6DAB3C;
+}
+.g5plus-lists-color-juicy_pink:before {
+  background-color: #F4524D;
+}
+.g5plus-lists-color-juicy_pink span {
+  color: #F4524D;
+}
+.g5plus-lists-color-sandy_brown:before {
+  background-color: #F79468;
+}
+.g5plus-lists-color-sandy_brown span {
+  color: #F79468;
+}
+.g5plus-lists-color-purple:before {
+  background-color: #B97EBB;
+}
+.g5plus-lists-color-purple span {
+  color: #B97EBB;
+}
+.g5plus-lists-color-white:before {
+  background-color: #fff;
+}
+.g5plus-lists-color-white span {
+  color: #fff;
+}
+.g5plus-lists-color-grey:before {
+  background-color: #888;
+}
+.g5plus-lists-color-grey span {
+  color: #888;
+}

@@ -1,0 +1,276 @@
+.g5plus-icon-box .icon {
+  text-align: center;
+  line-height: 45px;
+  width: 45px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.g5plus-icon-box .icon i {
+  font-size: 45px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.g5plus-icon-box .icon-image img {
+  height: auto;
+  text-align: center;
+}
+.g5plus-icon-box h4,
+.g5plus-icon-box a {
+  color: #1f1f1f;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.g5plus-icon-box p {
+  font-size: 14px;
+  letter-spacing: .02em;
+}
+.g5plus-icon-box.has-line h4:after {
+  content: '';
+  height: 2px;
+  width: 65px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+  display: block;
+}
+.g5plus-icon-box.background .icon,
+.g5plus-icon-box.out-line .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.g5plus-icon-box.background .icon:before,
+.g5plus-icon-box.out-line .icon:before {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.g5plus-icon-box.background .icon i,
+.g5plus-icon-box.out-line .icon i {
+  font-size: 35px;
+  display: inline-block;
+  line-height: 80px;
+  position: relative;
+}
+.g5plus-icon-box.out-line .icon {
+  background-color: transparent;
+}
+.g5plus-icon-box.out-line .icon:before {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.g5plus-icon-box.transparent {
+  background-color: transparent;
+  border-color: transparent;
+}
+.g5plus-icon-box.box_shadow_hover {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 45px 29px 55px 29px;
+  border-radius: 10px;
+}
+.g5plus-icon-box:hover.box_shadow_hover {
+  -webkit-box-shadow: 0px 7px 35px rgba(119, 119, 119, 0.2);
+  -moz-box-shadow: 0px 7px 35px rgba(119, 119, 119, 0.2);
+  box-shadow: 0px 7px 35px rgba(119, 119, 119, 0.2);
+}
+.g5plus-icon-box:hover.out-line .icon i {
+  color: #fff;
+}
+.g5plus-icon-box:hover.out-line .icon:before {
+  opacity: 1;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+.g5plus-icon-box:hover.background .icon:before {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.g5plus-icon-box:hover.background .icon i {
+  color: #fff;
+}
+.g5plus-icon-box:hover.transparent .icon i {
+  transform: scale(1.1);
+}
+.g5plus-icon-box.text-light h4 {
+  color: #fff;
+}
+.g5plus-icon-box.text-light h4 a {
+  color: #fff;
+}
+.g5plus-icon-box.text-light p {
+  color: #ccc;
+}
+.g5plus-icon-box.text-light .icon i {
+  color: #fff;
+}
+.g5plus-icon-box.text-light.out-line .icon {
+  border: 1px solid #fff;
+}
+.g5plus-icon-box.text-light.out-line .icon:before {
+  background-color: #fff;
+}
+.g5plus-icon-box.text-light:hover h4,
+.g5plus-icon-box.text-light:hover a {
+  color: #fff !important;
+}
+.g5plus-icon-box.text-light:hover .icon i {
+  color: #fff;
+}
+.g5plus-icon-box.text-light:hover.out-line .icon:before {
+  border-color: #fff;
+}
+.g5plus-icon-box.align-center {
+  text-align: center;
+}
+.g5plus-icon-box.align-center .icon,
+.g5plus-icon-box.align-center .icon-image {
+  margin: auto;
+}
+.g5plus-icon-box.align-center .icon i {
+  line-height: 80px;
+}
+.g5plus-icon-box.align-center .ib-content {
+  margin-top: 25px;
+}
+.g5plus-icon-box.align-center .ib-content h4 {
+  margin-bottom: 7px;
+}
+.g5plus-icon-box.align-center.has-line h4:after {
+  margin-left: auto;
+  margin-right: auto;
+}
+.g5plus-icon-box.align-left .ib-shape {
+  display: table-cell;
+}
+.g5plus-icon-box.align-left .icon-image img {
+  max-width: 80px;
+}
+.g5plus-icon-box.align-left .ib-content {
+  vertical-align: top !important;
+  display: table-cell;
+  padding-left: 24px;
+  text-align: left;
+}
+.g5plus-icon-box.align-left .ib-content h4 {
+  margin-bottom: 5px;
+}
+.g5plus-icon-box.align-top-left .ib-shape {
+  display: table-cell;
+}
+.g5plus-icon-box.align-top-left .icon-image img {
+  max-width: 80px;
+}
+.g5plus-icon-box.align-top-left h4 {
+  display: table-cell;
+  padding-left: 15px;
+  vertical-align: middle !important;
+}
+.g5plus-icon-box.align-top-left p {
+  margin-top: 17px;
+  font-size: 15px;
+}
+.g5plus-icon-box.icon-small .icon {
+  line-height: 40px;
+  width: 40px;
+}
+.g5plus-icon-box.icon-small .icon i {
+  font-size: 40px;
+}
+.g5plus-icon-box.icon-small.out-line .icon,
+.g5plus-icon-box.icon-small.background .icon {
+  width: 75px;
+  height: 75px;
+}
+.g5plus-icon-box.icon-small.out-line .icon i,
+.g5plus-icon-box.icon-small.background .icon i {
+  line-height: 75px;
+  font-size: 35px;
+}
+.g5plus-icon-box.icon-small.align-center .icon i {
+  line-height: 75px;
+}
+.g5plus-icon-box.icon-small.align-center .ib-content {
+  margin-top: 16px;
+}
+.g5plus-icon-box.icon-small.align-center .ib-content h4 {
+  margin-bottom: 14px;
+}
+.g5plus-icon-box.icon-large .icon {
+  line-height: 50px;
+  width: 50px;
+}
+.g5plus-icon-box.icon-large .icon i {
+  font-size: 50px;
+}
+.g5plus-icon-box.icon-large.out-line .icon,
+.g5plus-icon-box.icon-large.background .icon {
+  width: 100px;
+  height: 100px;
+}
+.g5plus-icon-box.icon-large.out-line .icon i,
+.g5plus-icon-box.icon-large.background .icon i {
+  line-height: 100px;
+}
+.g5plus-icon-box.icon-large.align-center .icon i {
+  line-height: 100px;
+}
+.g5plus-icon-box.icon-mini .icon {
+  line-height: 30px;
+  width: 30px;
+}
+.g5plus-icon-box.icon-mini .icon i {
+  font-size: 30px;
+}
+.g5plus-icon-box.icon-mini.out-line .icon,
+.g5plus-icon-box.icon-mini.background .icon {
+  width: 70px;
+  height: 70px;
+}
+.g5plus-icon-box.icon-mini.out-line .icon i,
+.g5plus-icon-box.icon-mini.background .icon i {
+  line-height: 70px;
+}
+.g5plus-icon-box.icon-mini.background .ib-content {
+  margin-top: 27px !important;
+}
+.g5plus-icon-box.icon-mini.align-center .icon i {
+  line-height: 70px;
+}
+.g5plus-icon-box.icon-mini.align-center .ib-content {
+  margin-top: 13px;
+}

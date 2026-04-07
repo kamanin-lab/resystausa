@@ -1,0 +1,265 @@
+.portfolio-single .portfolio-info .portfolio-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #333;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 35px;
+}
+.portfolio-single .portfolio-info .portfolio-title:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+}
+.portfolio-single .portfolio-info > p {
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+  margin-bottom: 45px;
+}
+.portfolio-single .portfolio-info-detail .portfolio-label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #111;
+  display: block;
+  margin-bottom: 7px;
+}
+.portfolio-single .portfolio-info-detail .portfolio-value {
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+.portfolio-single .portfolio-info-detail .social-share > span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #111;
+  display: block;
+}
+.portfolio-single .portfolio-info-detail .social-share .list-social-icon a {
+  font-size: 15px;
+  color: #888;
+}
+.portfolio-single .portfolio-images img {
+  width: 100%;
+}
+.portfolio-single .portfolio-images .portfolio-gallery-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.portfolio-single .portfolio-images .portfolio-thumbnail {
+  position: relative;
+}
+.portfolio-single .portfolio-images .portfolio-thumbnail:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.portfolio-single .portfolio-images .portfolio-thumbnail > a {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  font-size: 16px;
+  border: 1px solid #fff;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+}
+.portfolio-single .portfolio-images .portfolio-thumbnail > a.view-video i {
+  padding-left: 2px;
+}
+.portfolio-single .portfolio-images .portfolio-thumbnail:hover:before,
+.portfolio-single .portfolio-images .portfolio-thumbnail:hover > a {
+  opacity: 1;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 50px;
+  padding: 25px 30px;
+  overflow: auto;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li {
+  width: 33.33333333%;
+  float: left;
+  text-align: center;
+  color: #111;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li a {
+  color: #111;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li i {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li:first-of-type {
+  text-align: left;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li:first-of-type i {
+  padding-right: 10px;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li:last-of-type {
+  text-align: right;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li:last-of-type i {
+  padding-left: 10px;
+}
+.portfolio-single .portfolio-single-control .portfolio-single-control-inner li.disabled {
+  cursor: not-allowed;
+}
+.portfolio-single.portfolio-two-columns .portfolio-info {
+  border-right: 1px solid #eeeeee;
+}
+.portfolio-single.portfolio-two-columns .portfolio-info > h4,
+.portfolio-single.portfolio-two-columns .portfolio-info > p {
+  padding-right: 15px;
+}
+.portfolio-single.portfolio-two-columns .portfolio-info-detail {
+  padding-top: 45px;
+  border-top: 1px solid #eeeeee;
+}
+.portfolio-single.portfolio-two-columns .portfolio-info-detail .portfoli-meta,
+.portfolio-single.portfolio-two-columns .portfolio-info-detail .social-share {
+  margin-bottom: 37px;
+}
+.portfolio-single.portfolio-two-columns.portfolio-gallery-left .portfolio-info {
+  border-left: 1px solid #eeeeee;
+  border-right: none;
+}
+.portfolio-single.portfolio-two-columns.portfolio-gallery-left .portfolio-info > h4,
+.portfolio-single.portfolio-two-columns.portfolio-gallery-left .portfolio-info > p,
+.portfolio-single.portfolio-two-columns.portfolio-gallery-left .portfolio-info .portfolio-info-detail {
+  padding-left: 15px;
+  padding-right: 0;
+}
+.portfolio-single.portfolio-two-columns.portfolio-gallery-left .portfolio-info > h4:after {
+  left: 15px;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-content,
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-content {
+  border-right: 1px solid #eeeeee;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info {
+  margin-top: 30px;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info .portfolio-title {
+  margin-bottom: 30px;
+  padding-bottom: 0;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info .portfolio-title:after {
+  display: none;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail .portfolio-label,
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail .social-share > span {
+  margin-right: 20px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail {
+  border-left: 1px solid #eeeeee;
+  margin-left: -1px;
+  padding-left: 30px;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail .portfoli-meta,
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail .social-share {
+  padding-bottom: 16px;
+}
+.portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail .social-share {
+  margin-bottom: 6px;
+}
+.portfolio-single.portfolio-video-layout .portfolio-images .portfolio-thumbnail:before,
+.portfolio-single.portfolio-video-layout .portfolio-images .portfolio-thumbnail > a {
+  opacity: 1;
+}
+.portfolio-single.portfolio-video-layout .portfolio-images .portfolio-thumbnail > a {
+  background-color: #0077ed;
+  border-color: #0077ed;
+}
+.portfolio-single.portfolio-video-layout .portfolio-images .portfolio-thumbnail > a:hover,
+.portfolio-single.portfolio-video-layout .portfolio-images .portfolio-thumbnail > a:focus,
+.portfolio-single.portfolio-video-layout .portfolio-images .portfolio-thumbnail > a:active {
+  color: #0077ed;
+  background-color: #fff;
+  border-color: #fff;
+}
+.portfolio-single + .portfolio-related {
+  margin-top: 60px;
+}
+.portfolio-single .portfolio-related {
+  margin-top: 70px;
+}
+.portfolio-single .portfolio-related h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 55px;
+  padding-bottom: 15px;
+}
+.embed-responsive-portfolio {
+  padding-bottom: 62.33766%;
+}
+@media (max-width: 991px) {
+  .portfolio-single:not(.portfolio-two-columns) .portfolio-content {
+    border: none;
+  }
+  .portfolio-single:not(.portfolio-two-columns) .portfolio-content,
+  .portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .portfolio-single:not(.portfolio-two-columns) .portfolio-info-detail {
+    margin-left: 0;
+    padding-left: 15px;
+    border: none;
+  }
+}
