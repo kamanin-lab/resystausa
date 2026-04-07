@@ -1,7 +1,7 @@
 # Project State: resystausa.com Website Backup
 
 **Last updated:** 2026-04-07
-**Last activity:** 2026-04-07 - Completed quick task 260407-v51: Updated AUDIT-REPORT.md and CLAUDE.md to reflect CF7 forms hidden via CSS injection
+**Last activity:** 2026-04-07 - Completed quick task 260407-vlr: Hide wishlist/cart/calculator, remove social tracking scripts sitewide
 
 ---
 
@@ -89,6 +89,7 @@ Phase 1: [ ] Phase 2: [ ] Phase 3: [ ] Phase 4: [ ]
 | 260407-rhm | Scrape all ~55 blog posts from resystausa.com | 2026-04-07 | d7dadf5 | Complete | [260407-rhm-resystausa-com](./quick/260407-rhm-resystausa-com/) |
 | 260407-uol | Hide all CF7 contact forms and Flodesk newsletter across 607 static pages | 2026-04-07 | 116406b | Complete | [260407-uol-hide-all-contact-forms-and-newsletter-su](./quick/260407-uol-hide-all-contact-forms-and-newsletter-su/) |
 | 260407-v51 | Update AUDIT-REPORT.md and CLAUDE.md to reflect CF7 forms hidden via CSS | 2026-04-07 | cb2d51a | Complete | [260407-v51-update-audit-report-md-and-claude-md-to-](./quick/260407-v51-update-audit-report-md-and-claude-md-to-/) |
+| 260407-vlr | Hide wishlist/cart buttons, cost calculator, remove social tracking scripts sitewide | 2026-04-07 | 06310d7 | Complete | [260407-vlr-hide-wishlist-cart-buttons-cost-calculat](./quick/260407-vlr-hide-wishlist-cart-buttons-cost-calculat/) |
 
 ### Known Risks
 - If 74.208.236.71 is no longer the current origin IP, the entire primary path fails and Phase 3 becomes mandatory
