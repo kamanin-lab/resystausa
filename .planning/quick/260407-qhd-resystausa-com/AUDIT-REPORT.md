@@ -12,7 +12,7 @@ The backup captures the **HTML structure and most visual content** of resystausa
 
 **Priority 1 action: Download 107 missing technical files** (50 PDFs + 54 DWG ZIPs + 3 DOCX) before losing WP access. These are the client's technical documentation — irreplaceable once the site goes offline.
 
-**Known-fixed (skip):** reCAPTCHA removed from all pages. Super Store Finder replaced with static distributor cards.
+**Known-fixed (skip):** reCAPTCHA removed from all pages. Super Store Finder replaced with static distributor cards. CF7 forms and Flodesk newsletter hidden via CSS injection (`hide-forms.py`).
 
 ---
 
@@ -289,15 +289,17 @@ wget --no-check-certificate \
 
 ## 5. Form Inventory
 
+> **Known-fixed (2026-04-07):** All CF7 forms and the Flodesk newsletter widget (`.resnewsletter`) are now hidden via CSS injection across 607 HTML pages. The injector script is at `resysta-backup/hide-forms.py` and is idempotent. The injected CSS block is identified by the comment `<!-- gsd:hide-forms -->`. Status column below updated to reflect this.
+
 ### Active CF7 Forms
 
 | Form | Page | Fields | AJAX Action | Status |
 |------|------|--------|-------------|--------|
-| General inquiry (ID: 19875) | ~107 pages (footer/sidebar) | Email, message | `wpcf7_submit` | BROKEN |
-| Homepage CTA (ID: 22816) | `index.html` | Name, email, message | `wpcf7_submit` | BROKEN |
-| Contact us (ID: 1004) | `contact-resysta-usa/index.html` | Full contact fields | `wpcf7_submit` | BROKEN |
-| Warranty registration (ID: 1005) | `what-is-resysta/warranty-registration/` | 20+ fields (name, address, product, date, warranty type) | `wpcf7_submit` | BROKEN |
-| Course registration (ID: 30013) | `resysta-course/`, `aia-course-2-beyond-straight-level-facades/` | Name, phone, email, company, address | `wpcf7_submit` | BROKEN |
+| General inquiry (ID: 19875) | ~107 pages (footer/sidebar) | Email, message | `wpcf7_submit` | HIDDEN (CSS) |
+| Homepage CTA (ID: 22816) | `index.html` | Name, email, message | `wpcf7_submit` | HIDDEN (CSS) |
+| Contact us (ID: 1004) | `contact-resysta-usa/index.html` | Full contact fields | `wpcf7_submit` | HIDDEN (CSS) |
+| Warranty registration (ID: 1005) | `what-is-resysta/warranty-registration/` | 20+ fields (name, address, product, date, warranty type) | `wpcf7_submit` | HIDDEN (CSS) |
+| Course registration (ID: 30013) | `resysta-course/`, `aia-course-2-beyond-straight-level-facades/` | Name, phone, email, company, address | `wpcf7_submit` | HIDDEN (CSS) |
 
 ### WooCommerce Search Forms
 
@@ -443,6 +445,8 @@ All portfolio project pages are present in the backup.
 **Fastest approach for C1-C4:** Extract all 107 missing URLs into a file and use wget batch download via IP bypass.
 
 ### HIGH — Fixes needed for staging site to be useful
+
+> **Note:** CF7 forms H1–H4 are currently hidden via CSS (`hide-forms.py`). To replace with a static form service, first remove the `.wpcf7 { display: none }` CSS block, then implement the Formspree/Netlify replacement.
 
 | # | Action | Impact | Effort |
 |---|--------|--------|--------|
