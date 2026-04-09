@@ -1,67 +1,8 @@
 [
   {
-    "name": "all green - Building products distribution",
-    "address": "4035 Cheyenne Ct. Chino, California 91710",
-    "phone": "909.393.2800",
-    "website": "http://www.allgreenbp.com",
-    "email": "zoraida@allgreenbp.com",
-    "categories": "Distribution, Finish, Consulting"
-  },
-  {
-    "name": "HDG Building Materials, LLC",
-    "address": "Camas, Washington (WA, United States 98607",
-    "phone": "503.360.9551",
-    "website": "https://hdgbuildingmaterials.com/",
-    "email": "sales@hdgbuildingmaterials.com",
-    "categories": "Distribution"
-  },
-  {
-    "name": "Los Portales de Madeco, Inc.",
-    "address": "PO Box 19-3498 San Juan PR, 00926",
-    "website": "http://www.madecopr.com",
-    "email": "fvaldes@madecopr.com",
-    "description": "Fernando Valdes Los Portales de Madeco, Inc. PO Box 19-3498, San Juan PR 00926 787-250-1737 (Office) 787-473-3775 (Mobile / Whatsapp)"
-  },
-  {
-    "name": "North Country Distributors",
-    "address": "8600 Jefferson Highway Osseo, MN 55369",
-    "website": "http://ncdist.com",
-    "email": "gbannon@ncdist.com",
-    "categories": "Distribution",
-    "description": "Rob Zieper Cell: 612-369-1428 Order Desk: 763-391-5583"
-  },
-  {
-    "name": "Pacific American Lumber",
-    "address": "142 Mokauea St. Honolulu, HI, USA 96819",
-    "phone": "(808)845-8700",
-    "website": "https://www.pacamlumber.com/",
-    "email": "sales@pacamlumber.com",
-    "categories": "Distribution, Finish, Consulting"
-  },
-  {
-    "name": "RE-PLAST ECO",
-    "address": "1350 Chemin Quatre-Saisons Notre-Dame-du Bon-Conseil, QC, Canada J0C 1A0",
-    "phone": "819-336-2440"
-  },
-  {
-    "name": "RSW Colombia",
-    "address": "Bogota D.C., Colombia",
-    "phone": "+(57) 320 801 3767",
-    "email": "camilo@rswdist.com",
-    "description": "Camilo Pulgarin"
-  },
-  {
-    "name": "Sustain Built Supply, Inc.",
-    "address": "14219 Smokey Point Boulevard, Suite 2b Marysville, WA 98271",
-    "phone": "360.454.0268",
-    "website": "http://www.rnwdistribution.com",
-    "email": "arne@rnwdist.com",
-    "description": "Arne Zenneck, Manager"
-  },
-  {
-    "name": "VAMO BUILDING PRODUCTS CORP.",
-    "address": "2278 140 ST Surrey, BC, Canada V4A 9R7",
-    "phone": "909 270 1967",
-    "email": "rne@sustainbuilt.com"
+    "name": "ResystaUSA",
+    "website": "https://resystausa.com",
+    "email": "info@resysta.com",
+    "phone": "909-590-0121"
   }
 ]
